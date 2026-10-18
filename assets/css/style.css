@@ -429,3 +429,20 @@ nav.main.open{max-height:calc(100svh - 72px);overflow-y:auto;overscroll-behavior
  .stats,.tstats{margin-block:1.2rem}
 }
 @media(max-width:700px){#svc .card img{display:none}#svc .card{border-top:4px solid var(--brand)}}
+
+/* ===== calendrier : version mobile ===== */
+.calm{display:none}
+@media(max-width:700px){
+ .cal-wrap{display:none}
+ .calm{display:grid;gap:1rem;margin-top:1rem}
+ .calt{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg)}
+ .calt h3{margin:0;padding:.7rem 1rem;background:var(--forest);color:var(--on-forest);font-family:'Source Serif 4',serif;font-size:1.05rem}
+ .calr{padding:.8rem 1rem;border-top:1px solid var(--line);display:grid;gap:.45rem}
+ .calt h3+.calr{border-top:0}
+ .calh{display:flex;flex-direction:column;gap:.1rem}
+ .calh b{font-size:.98rem}.calh span{font-size:.82rem;color:var(--muted)}
+ .calb{display:grid;grid-template-columns:repeat(12,1fr);gap:2px}
+ .calb i{font-style:normal;font-size:.68rem;text-align:center;padding:.3rem 0;border-radius:3px;background:var(--sage);color:var(--muted)}
+ .calb i.on{background:var(--ochre);color:#fff;font-weight:700}
+ .calp{margin:0;font-size:.8rem;color:var(--ochre);font-weight:600}
+}
