@@ -229,6 +229,7 @@ nav.main>a[aria-current="page"]{background:none}
 .hx-panel .cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.3rem}
 .hx-tag{position:absolute;left:14px;bottom:8px;font-size:.72rem;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.8)}
 @media (max-width:860px){.hx-card{height:auto}.hx-img{height:auto;aspect-ratio:4/3}.hx-panel{position:static;width:auto;border-radius:0;backdrop-filter:none;background:var(--forest)}.hx-tag{top:8px;bottom:auto}}
+.phero.noimg .wrap{grid-template-columns:1fr}
 .btn{border-radius:6px}
 .card{border-radius:10px;transition:transform .25s,box-shadow .25s}
 .card:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(10,30,16,.12)}
@@ -240,7 +241,7 @@ nav.main>a[aria-current="page"]{background:none}
 @media (min-width:861px){
  .band{min-height:100svh;display:flex;align-items:center}
  .band>.wrap{width:100%}
- .proof.band{min-height:0}
+ .proof.band,.band.flat{min-height:0}
 }
 @media (max-width:860px){.field{grid-template-columns:1fr;grid-auto-rows:auto}.field figure:first-child{grid-row:auto}.field figure{aspect-ratio:16/10}}
 [hidden]{display:none!important}
