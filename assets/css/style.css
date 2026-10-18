@@ -365,3 +365,41 @@ footer.f2 .legal{margin-top:.6rem;padding-top:.5rem;border-top:1px solid rgba(25
 footer.f2 .legal a{color:inherit}
 @media(max-width:860px){footer.f2 .fgrid{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){footer.f2 .fgrid{grid-template-columns:1fr}}
+
+/* ===== responsive mobile et tablette ===== */
+.tstats div:last-child:nth-child(odd){grid-column:1/-1}
+nav.main.open{max-height:calc(100svh - 72px);overflow-y:auto;overscroll-behavior:contain}
+.m-only>a:first-child:not(.btn){display:none}
+.m-only a[href^="tel"]{display:block;text-align:center;border:2px solid var(--forest);border-radius:6px;padding:.7rem;font-weight:600;text-decoration:none;color:var(--forest)}
+.mbar{display:none}
+@media(max-width:860px){
+ .two{grid-template-columns:1fr!important}
+ .contact .wrap{grid-template-columns:1fr!important}
+ .split{grid-template-columns:1fr!important}
+ .recruit .wrap{grid-template-columns:1fr}
+ .person,.eq{padding:1.3rem}
+}
+@media(min-width:701px) and (max-width:1100px){
+ .gal{grid-template-columns:repeat(3,1fr)}
+ .rcgrid,.eqgrid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+ body{padding-bottom:64px}
+ .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;gap:.6rem;padding:.55rem .8rem calc(.55rem + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line);box-shadow:0 -6px 20px -12px rgba(18,48,27,.4)}
+ .mbar a{flex:1;display:flex;align-items:center;justify-content:center;min-height:46px;border-radius:6px;font-weight:600;text-decoration:none;font-size:.95rem}
+ .mbar a:first-child{flex:0 0 36%;border:2px solid var(--forest);color:var(--forest)}
+ .mbar a:last-child{background:var(--brand);color:var(--forest)}
+ .up{bottom:76px!important}
+ .gal{grid-template-columns:1fr 1fr;gap:.6rem}
+ .ph{aspect-ratio:1/1}
+ .ph span{font-size:.78rem;padding:1rem .6rem .5rem}
+ .offer{flex-direction:column;align-items:flex-start}
+ .btn{min-height:46px}
+ input,select,textarea{font-size:16px!important}
+ .rcgrid,.eqgrid,.agencies,.tgrid,.pillars{grid-template-columns:1fr!important}
+ table.cal td.t{position:sticky;left:0;z-index:1}
+ footer.f2 .fgrid a{padding:.3rem 0}
+ footer.f2 .logo img{height:36px}
+ .tstats b{font-size:1.7rem}
+ .phero .cta .btn{width:100%;justify-content:center}
+}
