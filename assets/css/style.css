@@ -403,3 +403,29 @@ nav.main.open{max-height:calc(100svh - 72px);overflow-y:auto;overscroll-behavior
  .tstats b{font-size:1.7rem}
  .phero .cta .btn{width:100%;justify-content:center}
 }
+
+/* ===== mobile : pages plus courtes ===== */
+.mshow{display:none}
+@media(max-width:700px){
+ .band{padding-block:2.2rem}
+ .sec{margin-top:2rem}
+ .split{margin-top:1.8rem;gap:1.2rem}
+ .split figure{aspect-ratio:16/9}
+ .eq .chips2,.rc .chips2,.person .tags{display:none}
+ .rc img,.card img{aspect-ratio:21/9}
+ .rc .b,.eq{gap:.4rem}
+ .tband,.split figure{display:none}
+ .jobhead{grid-template-columns:repeat(3,1fr)}
+ .jobhead div{padding:.9rem .4rem}.jobhead b{font-size:1.5rem}.jobhead span{font-size:.8rem}
+ section.proof,section.path:not([id]),#terrain{display:none}
+ #svc .card ul{display:none}
+ #references .chips{display:none}
+ #references .head p{display:none}
+ #refs .card:nth-child(n+3){display:none}
+ #gal .ph:nth-child(n+5){display:none}
+ .recruit .rlist,.recruit figure{display:none}
+ #contact form{display:none}
+ #contact .mshow{display:flex;justify-content:center;margin-top:1.2rem}
+ .stats,.tstats{margin-block:1.2rem}
+}
+@media(max-width:700px){#svc .card img{display:none}#svc .card{border-top:4px solid var(--brand)}}
