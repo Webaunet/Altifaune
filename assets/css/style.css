@@ -200,3 +200,5 @@ img{max-width:100%}
 .map ul{margin:.3rem 0 1.4rem;padding-left:1.2rem}
 .map h2{font-size:1.4rem;margin-top:1.4rem}
 nav.main a[aria-current="page"],.dd-panel a[aria-current="page"]{background:var(--sage);font-weight:600}
+
+[hidden]{display:none!important}
